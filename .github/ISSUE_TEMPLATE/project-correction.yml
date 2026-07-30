@@ -1,0 +1,47 @@
+name: Project row correction
+description: Correct a comparison value or its public source.
+title: "fix(data): correct "
+labels:
+  - data
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project
+      placeholder: OpenSEO
+    validations:
+      required: true
+  - type: input
+    id: cell
+    attributes:
+      label: Cell
+      placeholder: MCP
+    validations:
+      required: true
+  - type: input
+    id: value
+    attributes:
+      label: Correct value
+      placeholder: Yes
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Public source
+      description: Link to official public documentation or a public repository file.
+      placeholder: https://example.com/docs/capability
+    validations:
+      required: true
+  - type: input
+    id: verified
+    attributes:
+      label: Verified date
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Keep this factual and brief.

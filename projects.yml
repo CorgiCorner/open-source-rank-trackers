@@ -1,0 +1,399 @@
+version: 2
+comparison:
+  title: Open Source Rank Trackers
+  verified_at: 2026-07-30
+  maintained_by: CorgiCorner
+  disclosure: This comparison is maintained by CorgiCorner, the organization behind Bisibility.
+  feature_columns:
+    - { key: dashboard, label: Dashboard, navigation_label: With a web dashboard }
+    - { key: rest_api, label: REST API, navigation_label: Exposes a REST API }
+    - { key: mcp, label: MCP, navigation_label: Exposes an MCP server }
+    - { key: cli, label: CLI, navigation_label: Provides a CLI }
+  related_lists:
+    - name: eliquid/awesome-seo-rank-trackers
+      fact:
+        value: "Last README commit: 2018-08-14"
+        source: https://github.com/eliquid/awesome-seo-rank-trackers/commit/8813170cea3a2842d76477fada79455d9061a02e
+        verified_at: 2026-07-30
+    - name: serpapi/awesome-seo-tools
+      fact:
+        value: In the Rank Tracking section, SerpBear is the only entry explicitly described as open source
+        source: https://github.com/serpapi/awesome-seo-tools#rank-tracking
+        verified_at: 2026-07-30
+projects:
+  - name: OpenSEO
+    repository: every-app/open-seo
+    website: https://openseo.so
+    evidence_set:
+      - kind: readme
+        label: Repository README
+        source: https://github.com/every-app/open-seo#readme
+        scope: Complete repository README
+        verified_at: 2026-07-30
+      - kind: documentation
+        label: Official documentation source tree
+        source: https://github.com/every-app/open-seo/tree/main/web/content/docs
+        scope: All 17 files under web/content/docs
+        verified_at: 2026-07-30
+    status:
+      value: active
+      source: https://github.com/every-app/open-seo
+      verified_at: 2026-07-30
+    maturity:
+      value: Active
+      source: https://github.com/every-app/open-seo/releases/tag/v0.1.3
+      verified_at: 2026-07-30
+    license:
+      server:
+        value: MIT
+        source: https://github.com/every-app/open-seo/blob/main/LICENSE
+        verified_at: 2026-07-30
+      clients:
+        value: MIT (same repository)
+        source: https://github.com/every-app/open-seo/blob/main/LICENSE
+        verified_at: 2026-07-30
+    data_source:
+      value: BYOK (DataForSEO)
+      source: https://github.com/every-app/open-seo#costs
+      verified_at: 2026-07-30
+    features:
+      dashboard:
+        value: true
+        source: https://github.com/every-app/open-seo#features
+        verified_at: 2026-07-30
+      rest_api:
+        value: unknown
+        source: https://github.com/every-app/open-seo/tree/main/web/content/docs
+        verified_at: 2026-07-30
+        note: No user-facing REST API is documented in the repository README or the complete official documentation corpus.
+      mcp:
+        value: true
+        source: https://openseo.so/docs/mcp
+        verified_at: 2026-07-30
+      cli:
+        value: unknown
+        source: https://github.com/every-app/open-seo/tree/main/web/content/docs
+        verified_at: 2026-07-30
+        note: No end-user CLI is documented in the repository README or the complete official documentation corpus.
+    metrics:
+      stars:
+        value: 9617
+        source: https://github.com/every-app/open-seo
+        verified_at: 2026-07-30
+      last_commit:
+        value: 2026-07-30T04:23:36Z
+        source: https://github.com/every-app/open-seo/commit/9d19e439905a9a954ccdefe22d9270d7c389695d
+        verified_at: 2026-07-30
+      archived:
+        value: false
+        source: https://github.com/every-app/open-seo
+        verified_at: 2026-07-30
+      created_at:
+        value: 2026-02-27T18:57:41Z
+        source: https://github.com/every-app/open-seo
+        verified_at: 2026-07-30
+      latest_release:
+        value: 2026-07-30T04:28:19Z
+        source: https://github.com/every-app/open-seo/releases/tag/v0.1.3
+        verified_at: 2026-07-30
+  - name: SerpBear
+    repository: towfiqi/serpbear
+    website: https://docs.serpbear.com
+    evidence_set:
+      - kind: readme
+        label: Repository README
+        source: https://github.com/towfiqi/serpbear#readme
+        scope: Complete repository README
+        verified_at: 2026-07-30
+      - kind: documentation
+        label: Official documentation sitemap
+        source: https://docs.serpbear.com/sitemap.xml
+        scope: All 18 documentation pages listed in the sitemap
+        verified_at: 2026-07-30
+    status:
+      value: active
+      source: https://github.com/towfiqi/serpbear
+      verified_at: 2026-07-30
+    maturity:
+      value: Mature
+      source: https://github.com/towfiqi/serpbear/releases/tag/v3.1.0
+      verified_at: 2026-07-30
+    license:
+      server:
+        value: MIT
+        source: https://github.com/towfiqi/serpbear/blob/main/LICENSE
+        verified_at: 2026-07-30
+      clients:
+        value: MIT (same repository)
+        source: https://github.com/towfiqi/serpbear/blob/main/LICENSE
+        verified_at: 2026-07-30
+    data_source:
+      value: Self-managed scraper or BYOK API/proxy
+      source: https://docs.serpbear.com/integrations/
+      verified_at: 2026-07-30
+    features:
+      dashboard:
+        value: true
+        source: https://docs.serpbear.com/
+        verified_at: 2026-07-30
+      rest_api:
+        value: true
+        source: https://docs.serpbear.com/miscellaneous/api-documentation/
+        verified_at: 2026-07-30
+      mcp:
+        value: unknown
+        source: https://docs.serpbear.com/sitemap.xml
+        verified_at: 2026-07-30
+        note: MCP is not documented in the repository README or any of the 18 pages in the official documentation sitemap.
+      cli:
+        value: unknown
+        source: https://docs.serpbear.com/sitemap.xml
+        verified_at: 2026-07-30
+        note: An end-user CLI is not documented in the repository README or any of the 18 pages in the official documentation sitemap.
+    metrics:
+      stars:
+        value: 2019
+        source: https://github.com/towfiqi/serpbear
+        verified_at: 2026-07-30
+      last_commit:
+        value: 2026-05-14T07:30:56Z
+        source: https://github.com/towfiqi/serpbear/commit/a1328fb4142dde40e0011c646339c4d4dbabdaca
+        verified_at: 2026-07-30
+      archived:
+        value: false
+        source: https://github.com/towfiqi/serpbear
+        verified_at: 2026-07-30
+      created_at:
+        value: 2022-11-24T14:13:07Z
+        source: https://github.com/towfiqi/serpbear
+        verified_at: 2026-07-30
+      latest_release:
+        value: 2026-03-27T03:55:09Z
+        source: https://github.com/towfiqi/serpbear/releases/tag/v3.1.0
+        verified_at: 2026-07-30
+  - name: SerpTrail
+    repository: serpapi/serptrail
+    website: https://github.com/serpapi/serptrail
+    evidence_set:
+      - kind: readme
+        label: Repository README
+        source: https://github.com/serpapi/serptrail#readme
+        scope: Complete repository README
+        verified_at: 2026-07-30
+      - kind: documentation
+        label: Official repository documentation directory
+        source: https://github.com/serpapi/serptrail/tree/master/docs
+        scope: All files in docs (PRODUCTION.md and RELEASE.md)
+        verified_at: 2026-07-30
+    status:
+      value: active
+      source: https://github.com/serpapi/serptrail
+      verified_at: 2026-07-30
+    maturity:
+      value: Experimental
+      source: https://github.com/serpapi/serptrail/releases
+      verified_at: 2026-07-30
+    license:
+      server:
+        value: MIT
+        source: https://github.com/serpapi/serptrail/blob/master/LICENSE
+        verified_at: 2026-07-30
+      clients:
+        value: MIT (same repository)
+        source: https://github.com/serpapi/serptrail/blob/master/LICENSE
+        verified_at: 2026-07-30
+    data_source:
+      value: BYOK (SerpApi)
+      source: https://github.com/serpapi/serptrail#requirements
+      verified_at: 2026-07-30
+    features:
+      dashboard:
+        value: true
+        source: https://github.com/serpapi/serptrail#readme
+        verified_at: 2026-07-30
+      rest_api:
+        value: unknown
+        source: https://github.com/serpapi/serptrail/tree/master/docs
+        verified_at: 2026-07-30
+        note: No user-facing REST API is documented in the repository README or the complete official repository documentation directory.
+      mcp:
+        value: unknown
+        source: https://github.com/serpapi/serptrail/tree/master/docs
+        verified_at: 2026-07-30
+        note: MCP is not documented in the repository README or the complete official repository documentation directory.
+      cli:
+        value: unknown
+        source: https://github.com/serpapi/serptrail/tree/master/docs
+        verified_at: 2026-07-30
+        note: An end-user CLI is not documented in the repository README or the complete official repository documentation directory.
+    metrics:
+      stars:
+        value: 41
+        source: https://github.com/serpapi/serptrail
+        verified_at: 2026-07-30
+      last_commit:
+        value: 2026-07-29T15:14:36Z
+        source: https://github.com/serpapi/serptrail/commit/bcf5eba2a2adf3f4cb59594ad70b75c9ecefd78e
+        verified_at: 2026-07-30
+      archived:
+        value: false
+        source: https://github.com/serpapi/serptrail
+        verified_at: 2026-07-30
+      created_at:
+        value: 2026-04-20T11:34:40Z
+        source: https://github.com/serpapi/serptrail
+        verified_at: 2026-07-30
+      latest_release:
+        value: null
+        source: https://github.com/serpapi/serptrail/releases
+        verified_at: 2026-07-30
+  - name: Bisibility
+    repository: CorgiCorner/bisibility
+    website: https://bisibility.com
+    evidence_set:
+      - kind: readme
+        label: Repository README
+        source: https://github.com/CorgiCorner/bisibility#readme
+        scope: Complete repository README
+        verified_at: 2026-07-30
+      - kind: documentation
+        label: Official documentation source tree
+        source: https://github.com/CorgiCorner/bisibility/tree/main/docs
+        scope: All public documentation files under docs
+        verified_at: 2026-07-30
+    status:
+      value: active
+      source: https://github.com/CorgiCorner/bisibility
+      verified_at: 2026-07-30
+    maturity:
+      value: Experimental
+      source: https://github.com/CorgiCorner/bisibility/releases
+      verified_at: 2026-07-30
+    license:
+      server:
+        value: AGPL-3.0-only
+        source: https://github.com/CorgiCorner/bisibility/blob/main/LICENSE
+        verified_at: 2026-07-30
+      clients:
+        value: Apache-2.0
+        source: https://github.com/CorgiCorner/bisibility-sdk-ts/blob/main/LICENSE
+        verified_at: 2026-07-30
+    data_source:
+      value: BYOK (DataForSEO or SerpAPI)
+      source: https://github.com/CorgiCorner/bisibility#provider-support
+      verified_at: 2026-07-30
+    features:
+      dashboard:
+        value: true
+        source: https://github.com/CorgiCorner/bisibility#readme
+        verified_at: 2026-07-30
+      rest_api:
+        value: true
+        source: https://bisibility.com/docs/api/overview
+        verified_at: 2026-07-30
+      mcp:
+        value: true
+        source: https://bisibility.com/docs/agents
+        verified_at: 2026-07-30
+      cli:
+        value: true
+        source: https://github.com/CorgiCorner/bisibility#product-status
+        verified_at: 2026-07-30
+    metrics:
+      stars:
+        value: 0
+        source: https://github.com/CorgiCorner/bisibility
+        verified_at: 2026-07-30
+      last_commit:
+        value: 2026-07-30T05:59:02Z
+        source: https://github.com/CorgiCorner/bisibility/commit/a311b6d17997c020389c57cb9af1db9324b311a7
+        verified_at: 2026-07-30
+      archived:
+        value: false
+        source: https://github.com/CorgiCorner/bisibility
+        verified_at: 2026-07-30
+      created_at:
+        value: 2026-06-18T16:08:33Z
+        source: https://github.com/CorgiCorner/bisibility
+        verified_at: 2026-07-30
+      latest_release:
+        value: null
+        source: https://github.com/CorgiCorner/bisibility/releases
+        verified_at: 2026-07-30
+  - name: Serposcope
+    repository: serphacker/serposcope
+    website: https://github.com/serphacker/serposcope
+    evidence_set:
+      - kind: readme
+        label: Repository README
+        source: https://github.com/serphacker/serposcope#readme
+        scope: Complete repository README
+        verified_at: 2026-07-30
+      - kind: documentation
+        label: Official project website
+        source: https://serphacker.com/en/
+        scope: Public project and release documentation linked from the official site
+        verified_at: 2026-07-30
+    status:
+      value: legacy
+      source: https://github.com/serphacker/serposcope#legacy-code-disclaimer
+      verified_at: 2026-07-30
+    maturity:
+      value: Legacy
+      source: https://github.com/serphacker/serposcope
+      verified_at: 2026-07-30
+    license:
+      server:
+        value: MIT
+        source: https://github.com/serphacker/serposcope/blob/master/LICENSE.txt
+        verified_at: 2026-07-30
+      clients:
+        value: MIT (same repository)
+        source: https://github.com/serphacker/serposcope/blob/master/LICENSE.txt
+        verified_at: 2026-07-30
+    data_source:
+      value: unknown
+      source: https://github.com/serphacker/serposcope
+      verified_at: 2026-07-30
+      note: Current provider support is not documented in the reviewed public overview.
+    features:
+      dashboard:
+        value: true
+        source: https://serphacker.com/en/
+        verified_at: 2026-07-30
+      rest_api:
+        value: unknown
+        source: https://github.com/serphacker/serposcope
+        verified_at: 2026-07-30
+        note: No user-facing REST API is documented in the reviewed public overview.
+      mcp:
+        value: unknown
+        source: https://github.com/serphacker/serposcope
+        verified_at: 2026-07-30
+        note: MCP is not documented in the reviewed public overview.
+      cli:
+        value: unknown
+        source: https://github.com/serphacker/serposcope
+        verified_at: 2026-07-30
+        note: An end-user CLI is not documented in the reviewed public overview.
+    metrics:
+      stars:
+        value: 755
+        source: https://github.com/serphacker/serposcope
+        verified_at: 2026-07-30
+      last_commit:
+        value: 2022-01-15T13:06:36Z
+        source: https://github.com/serphacker/serposcope/commit/079809705817871984cff40c87a4fe176cccb90b
+        verified_at: 2026-07-30
+      archived:
+        value: true
+        source: https://github.com/serphacker/serposcope
+        verified_at: 2026-07-30
+      created_at:
+        value: 2013-03-18T19:12:22Z
+        source: https://github.com/serphacker/serposcope
+        verified_at: 2026-07-30
+      latest_release:
+        value: null
+        source: https://github.com/serphacker/serposcope/releases
+        verified_at: 2026-07-30
