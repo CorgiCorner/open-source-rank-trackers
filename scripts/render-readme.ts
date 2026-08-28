@@ -207,13 +207,6 @@ ${data.comparison.related_lists
 
 ## FAQ
 
-### Why does Bisibility use AGPL-3.0?
-
-Bisibility is licensed under AGPL-3.0; if you modify it and let users interact
-with that version over a network, you must offer those users the corresponding
-source. Self-hosting for your own use, including internally, does not trigger
-that requirement.
-
 ### How can I correct a row?
 
 Listed project maintainers can correct their row by opening an issue or pull

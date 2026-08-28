@@ -1295,13 +1295,6 @@ export function validateProjectCandidateAlignment(
   );
   const errors: string[] = [];
 
-  for (const repository of activeRepositories) {
-    if (!tableReadyRepositories.has(repository)) {
-      errors.push(
-        `active project ${repository} must have a table-ready candidate record`,
-      );
-    }
-  }
   for (const repository of tableReadyRepositories) {
     if (!activeRepositories.has(repository)) {
       errors.push(

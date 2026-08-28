@@ -34,6 +34,11 @@ that project.
 - [Repository README](https://github.com/CorgiCorner/bisibility#readme): Complete repository README
 - [Official documentation source tree](https://github.com/CorgiCorner/bisibility/tree/main/docs): All public documentation files under docs
 
+### Senkiu - evidence reviewed 2026-08-28
+
+- [Repository README](https://github.com/zft9xgy/senkiu#readme): Complete repository README
+- [Official repository documentation directory](https://github.com/zft9xgy/senkiu/tree/main/docs): All five screenshots under docs/screenshots
+
 ## Cell evidence notes
 
 - **OpenSEO - REST API:** No user-facing REST API is documented in the repository README or the complete official documentation corpus. [Source reviewed](https://github.com/every-app/open-seo/tree/main/web/content/docs).
@@ -43,3 +48,6 @@ that project.
 - **SerpTrail - REST API:** No user-facing REST API is documented in the repository README or the complete official repository documentation directory. [Source reviewed](https://github.com/serpapi/serptrail/tree/master/docs).
 - **SerpTrail - MCP:** MCP is not documented in the repository README or the complete official repository documentation directory. [Source reviewed](https://github.com/serpapi/serptrail/tree/master/docs).
 - **SerpTrail - CLI:** An end-user CLI is not documented in the repository README or the complete official repository documentation directory. [Source reviewed](https://github.com/serpapi/serptrail/tree/master/docs).
+- **Senkiu - REST API:** No user-facing REST API is documented in the complete repository README. [Source reviewed](https://github.com/zft9xgy/senkiu#readme).
+- **Senkiu - MCP:** MCP is not documented in the complete repository README. [Source reviewed](https://github.com/zft9xgy/senkiu#readme).
+- **Senkiu - CLI:** The README documents a deployment helper, but no general end-user CLI. [Source reviewed](https://github.com/zft9xgy/senkiu#getting-started).

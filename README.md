@@ -16,23 +16,22 @@ Every comparison cell links to public evidence. `Unknown` means the capability
 was not documented in the project's complete declared public evidence set; it
 does not mean the capability is absent.
 
-| Project | Repository | Stars | Data source | Dashboard | REST API | MCP | CLI | Last commit | Server license | Client license | Maturity |
-| --- | --- | ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [OpenSEO](https://openseo.so) | [every-app/open-seo](https://github.com/every-app/open-seo) | [9617](https://github.com/every-app/open-seo) | [BYOK (DataForSEO)](https://github.com/every-app/open-seo#costs) | [Yes](https://github.com/every-app/open-seo#features) | [Unknown](https://github.com/every-app/open-seo/tree/main/web/content/docs) | [Yes](https://openseo.so/docs/mcp) | [Unknown](https://github.com/every-app/open-seo/tree/main/web/content/docs) | [2026-07-30](https://github.com/every-app/open-seo/commit/9d19e439905a9a954ccdefe22d9270d7c389695d) | [MIT](https://github.com/every-app/open-seo/blob/main/LICENSE) | [MIT (same repository)](https://github.com/every-app/open-seo/blob/main/LICENSE) | [Active](https://github.com/every-app/open-seo/releases/tag/v0.1.3) |
-| [SerpBear](https://docs.serpbear.com) | [towfiqi/serpbear](https://github.com/towfiqi/serpbear) | [2019](https://github.com/towfiqi/serpbear) | [Self-managed scraper or BYOK API/proxy](https://docs.serpbear.com/integrations/) | [Yes](https://docs.serpbear.com/) | [Yes](https://docs.serpbear.com/miscellaneous/api-documentation/) | [Unknown](https://docs.serpbear.com/sitemap.xml) | [Unknown](https://docs.serpbear.com/sitemap.xml) | [2026-05-14](https://github.com/towfiqi/serpbear/commit/a1328fb4142dde40e0011c646339c4d4dbabdaca) | [MIT](https://github.com/towfiqi/serpbear/blob/main/LICENSE) | [MIT (same repository)](https://github.com/towfiqi/serpbear/blob/main/LICENSE) | [Mature](https://github.com/towfiqi/serpbear/releases/tag/v3.1.0) |
-| SerpTrail | [serpapi/serptrail](https://github.com/serpapi/serptrail) | [41](https://github.com/serpapi/serptrail) | [BYOK (SerpApi)](https://github.com/serpapi/serptrail#requirements) | [Yes](https://github.com/serpapi/serptrail#readme) | [Unknown](https://github.com/serpapi/serptrail/tree/master/docs) | [Unknown](https://github.com/serpapi/serptrail/tree/master/docs) | [Unknown](https://github.com/serpapi/serptrail/tree/master/docs) | [2026-07-29](https://github.com/serpapi/serptrail/commit/bcf5eba2a2adf3f4cb59594ad70b75c9ecefd78e) | [MIT](https://github.com/serpapi/serptrail/blob/master/LICENSE) | [MIT (same repository)](https://github.com/serpapi/serptrail/blob/master/LICENSE) | [Experimental](https://github.com/serpapi/serptrail/releases) |
-| [Bisibility](https://bisibility.com) | [CorgiCorner/bisibility](https://github.com/CorgiCorner/bisibility) | [0](https://github.com/CorgiCorner/bisibility) | [BYOK (DataForSEO or SerpAPI)](https://github.com/CorgiCorner/bisibility#provider-support) | [Yes](https://github.com/CorgiCorner/bisibility#readme) | [Yes](https://bisibility.com/docs/api/overview) | [Yes](https://bisibility.com/docs/agents) | [Yes](https://github.com/CorgiCorner/bisibility#product-status) | [2026-07-30](https://github.com/CorgiCorner/bisibility/commit/a311b6d17997c020389c57cb9af1db9324b311a7) | [AGPL-3.0-only](https://github.com/CorgiCorner/bisibility/blob/main/LICENSE) | [Apache-2.0](https://github.com/CorgiCorner/bisibility-sdk-ts/blob/main/LICENSE) | [Experimental](https://github.com/CorgiCorner/bisibility/releases) |
+| Project | Repository | Stars | Data source | Dashboard | REST API | MCP | CLI | Last commit | Server license | Client license | Maturity | Facts verified |
+| --- | --- | ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [OpenSEO](https://openseo.so) | [every-app/open-seo](https://github.com/every-app/open-seo) | [13918](https://github.com/every-app/open-seo) | [BYOK (DataForSEO)](https://github.com/every-app/open-seo#costs) | [Yes](https://github.com/every-app/open-seo#features) | [Unknown](https://github.com/every-app/open-seo/tree/main/web/content/docs) | [Yes](https://openseo.so/docs/mcp) | [Unknown](https://github.com/every-app/open-seo/tree/main/web/content/docs) | [2026-08-24](https://github.com/every-app/open-seo/commit/c469a48ae90ab58413b198fe3d1ac1aa90a9b070) | [MIT](https://github.com/every-app/open-seo/blob/main/LICENSE) | [MIT (same repository)](https://github.com/every-app/open-seo/blob/main/LICENSE) | [Active](https://github.com/every-app/open-seo/releases/tag/v0.1.6) | 2026-07-30 |
+| [SerpBear](https://docs.serpbear.com) | [towfiqi/serpbear](https://github.com/towfiqi/serpbear) | [2064](https://github.com/towfiqi/serpbear) | [Self-managed scraper or BYOK API/proxy](https://docs.serpbear.com/integrations/) | [Yes](https://docs.serpbear.com/) | [Yes](https://docs.serpbear.com/miscellaneous/api-documentation/) | [Unknown](https://docs.serpbear.com/sitemap.xml) | [Unknown](https://docs.serpbear.com/sitemap.xml) | [2026-05-14](https://github.com/towfiqi/serpbear/commit/a1328fb4142dde40e0011c646339c4d4dbabdaca) | [MIT](https://github.com/towfiqi/serpbear/blob/main/LICENSE) | [MIT (same repository)](https://github.com/towfiqi/serpbear/blob/main/LICENSE) | [Mature](https://github.com/towfiqi/serpbear/releases/tag/v3.1.0) | 2026-07-30 |
+| SerpTrail | [serpapi/serptrail](https://github.com/serpapi/serptrail) | [44](https://github.com/serpapi/serptrail) | [BYOK (SerpApi)](https://github.com/serpapi/serptrail#requirements) | [Yes](https://github.com/serpapi/serptrail#readme) | [Unknown](https://github.com/serpapi/serptrail/tree/master/docs) | [Unknown](https://github.com/serpapi/serptrail/tree/master/docs) | [Unknown](https://github.com/serpapi/serptrail/tree/master/docs) | [2026-08-03](https://github.com/serpapi/serptrail/commit/77bfecaa1049a9a4b48e563558b6fc47cba8b5cd) | [MIT](https://github.com/serpapi/serptrail/blob/master/LICENSE) | [MIT (same repository)](https://github.com/serpapi/serptrail/blob/master/LICENSE) | [Experimental](https://github.com/serpapi/serptrail/releases) | 2026-07-30 |
+| [Bisibility](https://bisibility.com) | [CorgiCorner/bisibility](https://github.com/CorgiCorner/bisibility) | [35](https://github.com/CorgiCorner/bisibility) | [BYOK (DataForSEO or SerpAPI)](https://github.com/CorgiCorner/bisibility#provider-support) | [Yes](https://github.com/CorgiCorner/bisibility#readme) | [Yes](https://bisibility.com/docs/api/overview) | [Yes](https://bisibility.com/docs/agents) | [Yes](https://github.com/CorgiCorner/bisibility#product-status) | [2026-08-28](https://github.com/CorgiCorner/bisibility/commit/c7318d6a2b754eeedfd3a4ffaf019d7e82560893) | [AGPL-3.0-only](https://github.com/CorgiCorner/bisibility/blob/main/LICENSE) | [Apache-2.0](https://github.com/CorgiCorner/bisibility-sdk-ts/blob/main/LICENSE) | [Experimental](https://github.com/CorgiCorner/bisibility/releases/tag/v0.16.0) | 2026-07-30 |
+| Senkiu | [zft9xgy/senkiu](https://github.com/zft9xgy/senkiu) | [1](https://github.com/zft9xgy/senkiu) | [BYOK (DataForSEO)](https://github.com/zft9xgy/senkiu#getting-started) | [Yes](https://github.com/zft9xgy/senkiu#screenshots) | [Unknown](https://github.com/zft9xgy/senkiu#readme) | [Unknown](https://github.com/zft9xgy/senkiu#readme) | [Unknown](https://github.com/zft9xgy/senkiu#getting-started) | [2026-08-28](https://github.com/zft9xgy/senkiu/commit/6339f6680507d7c3c90272d36f8e8f5c3c2c6b85) | [AGPL-3.0-only](https://github.com/zft9xgy/senkiu/blob/main/LICENSE) | [AGPL-3.0-only (same repository)](https://github.com/zft9xgy/senkiu/blob/main/LICENSE) | [Experimental](https://github.com/zft9xgy/senkiu/releases/tag/v0.1.0) | 2026-08-28 |
 
 `BYOK` means bring your own key: you connect credentials for your own data
 provider account, and provider usage is billed separately.
 
-**Facts verified:** 2026-07-30
-
-Metrics refreshed weekly. Last change: 2026-07-30.
+Metrics refreshed weekly. Last change: 2026-08-28.
 
 ### Browse by interface
 
-- **With a web dashboard:** [OpenSEO](https://openseo.so), [SerpBear](https://docs.serpbear.com), [SerpTrail](https://github.com/serpapi/serptrail), [Bisibility](https://bisibility.com)
+- **With a web dashboard:** [OpenSEO](https://openseo.so), [SerpBear](https://docs.serpbear.com), [SerpTrail](https://github.com/serpapi/serptrail), [Bisibility](https://bisibility.com), [Senkiu](https://github.com/zft9xgy/senkiu)
 - **Exposes a REST API:** [SerpBear](https://docs.serpbear.com), [Bisibility](https://bisibility.com)
 - **Exposes an MCP server:** [OpenSEO](https://openseo.so), [Bisibility](https://bisibility.com)
 - **Provides a CLI:** [Bisibility](https://bisibility.com)
@@ -62,13 +61,6 @@ above.
 - [serpapi/awesome-seo-tools](https://github.com/serpapi/awesome-seo-tools#rank-tracking): In the Rank Tracking section, SerpBear is the only entry explicitly described as open source. Verified 2026-07-30.
 
 ## FAQ
-
-### Why does Bisibility use AGPL-3.0?
-
-Bisibility is licensed under AGPL-3.0; if you modify it and let users interact
-with that version over a network, you must offer those users the corresponding
-source. Self-hosting for your own use, including internally, does not trigger
-that requirement.
 
 ### How can I correct a row?
 
