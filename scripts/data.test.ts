@@ -42,7 +42,7 @@ test("active projects are sorted by stars descending", async () => {
   const projects = activeProjects(await loadData());
   assert.deepEqual(
     projects.map((project) => project.name),
-    ["OpenSEO", "SerpBear", "SerpTrail", "Bisibility"],
+    ["OpenSEO", "SerpBear", "SerpTrail", "Bisibility", "Senkiu"],
   );
 });
 
@@ -57,7 +57,7 @@ test("active table rows and table-ready candidates stay aligned", async () => {
   );
 });
 
-test("alignment rejects an active row without a table-ready candidate", async () => {
+test("an active row may be added editorially without a discovery candidate", async () => {
   const [projects, candidates] = await Promise.all([
     loadData(),
     loadCandidateData(),
@@ -68,11 +68,7 @@ test("alignment rejects an active row without a table-ready candidate", async ()
   )!;
   candidate.status = "pending-review";
 
-  assert.ok(
-    validateProjectCandidateAlignment(projects, changed).some((error) =>
-      error.includes("corgicorner/bisibility"),
-    ),
-  );
+  assert.deepEqual(validateProjectCandidateAlignment(projects, changed), []);
 });
 
 test("included candidates may wait for table evidence without an active row", async () => {
@@ -166,9 +162,22 @@ test("a configured feature column renders without renderer changes", async () =>
   );
 });
 
-test("facts date stays out of the table until project dates diverge", async () => {
+test("facts date appears only when project dates diverge", async () => {
   const data = structuredClone(await loadData());
   const candidates = await loadCandidateData();
+
+  for (const project of data.projects) {
+    for (const cell of [
+      project.status,
+      project.maturity,
+      project.license.server,
+      project.license.clients,
+      project.data_source,
+      ...Object.values(project.features),
+    ]) {
+      cell.verified_at = "2026-08-28";
+    }
+  }
   assert.doesNotMatch(renderReadme(data, candidates), /\| Facts verified \|/);
 
   data.projects[0]!.license.server.verified_at = "2026-07-29";
@@ -185,7 +194,7 @@ test("repository links render in their own column", async () => {
   assert.match(readme, /\| Project \| Repository \| Stars \| Data source \|/);
   assert.match(
     readme,
-    /\| SerpTrail \| \[serpapi\/serptrail\]\(https:\/\/github\.com\/serpapi\/serptrail\) \| \[41\]/,
+    /\| SerpTrail \| \[serpapi\/serptrail\]\(https:\/\/github\.com\/serpapi\/serptrail\) \| \[44\]/,
   );
   assert.doesNotMatch(readme, /\]\([^)]*\) \(\[GitHub\]/);
 });
