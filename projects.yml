@@ -41,8 +41,8 @@ projects:
       verified_at: 2026-07-30
     maturity:
       value: Active
-      source: https://github.com/every-app/open-seo/releases/tag/v0.1.6
-      verified_at: 2026-08-28
+      source: https://github.com/every-app/open-seo/releases/tag/v0.1.12
+      verified_at: 2026-10-10
     license:
       server:
         value: MIT
@@ -77,13 +77,13 @@ projects:
         note: No end-user CLI is documented in the repository README or the complete official documentation corpus.
     metrics:
       stars:
-        value: 13918
+        value: 22969
         source: https://github.com/every-app/open-seo
-        verified_at: 2026-08-28
+        verified_at: 2026-10-10
       last_commit:
-        value: 2026-08-24T00:18:24Z
-        source: https://github.com/every-app/open-seo/commit/c469a48ae90ab58413b198fe3d1ac1aa90a9b070
-        verified_at: 2026-08-28
+        value: 2026-10-08T07:01:04Z
+        source: https://github.com/every-app/open-seo/commit/89e5a00717cdf049b7c2b4e29646edb3a7d4995b
+        verified_at: 2026-10-10
       archived:
         value: false
         source: https://github.com/every-app/open-seo
@@ -93,9 +93,9 @@ projects:
         source: https://github.com/every-app/open-seo
         verified_at: 2026-07-30
       latest_release:
-        value: 2026-08-19T18:35:38Z
-        source: https://github.com/every-app/open-seo/releases/tag/v0.1.6
-        verified_at: 2026-08-28
+        value: 2026-10-08T07:33:37Z
+        source: https://github.com/every-app/open-seo/releases/tag/v0.1.12
+        verified_at: 2026-10-10
   - name: SerpBear
     repository: towfiqi/serpbear
     website: https://docs.serpbear.com
@@ -152,9 +152,9 @@ projects:
         note: An end-user CLI is not documented in the repository README or any of the 18 pages in the official documentation sitemap.
     metrics:
       stars:
-        value: 2064
+        value: 2107
         source: https://github.com/towfiqi/serpbear
-        verified_at: 2026-08-28
+        verified_at: 2026-10-10
       last_commit:
         value: 2026-05-14T07:30:56Z
         source: https://github.com/towfiqi/serpbear/commit/a1328fb4142dde40e0011c646339c4d4dbabdaca
@@ -228,9 +228,9 @@ projects:
         note: An end-user CLI is not documented in the repository README or the complete official repository documentation directory.
     metrics:
       stars:
-        value: 44
+        value: 50
         source: https://github.com/serpapi/serptrail
-        verified_at: 2026-08-28
+        verified_at: 2026-10-10
       last_commit:
         value: 2026-08-03T09:51:13Z
         source: https://github.com/serpapi/serptrail/commit/77bfecaa1049a9a4b48e563558b6fc47cba8b5cd
@@ -266,9 +266,9 @@ projects:
       source: https://github.com/CorgiCorner/bisibility
       verified_at: 2026-07-30
     maturity:
-      value: Experimental
-      source: https://github.com/CorgiCorner/bisibility/releases/tag/v0.16.0
-      verified_at: 2026-08-28
+      value: Active
+      source: https://github.com/CorgiCorner/bisibility/releases/tag/v0.30.0
+      verified_at: 2026-10-10
     license:
       server:
         value: AGPL-3.0-only
@@ -301,13 +301,13 @@ projects:
         verified_at: 2026-07-30
     metrics:
       stars:
-        value: 35
+        value: 584
         source: https://github.com/CorgiCorner/bisibility
-        verified_at: 2026-08-28
+        verified_at: 2026-10-10
       last_commit:
-        value: 2026-08-28T02:24:38Z
-        source: https://github.com/CorgiCorner/bisibility/commit/c7318d6a2b754eeedfd3a4ffaf019d7e82560893
-        verified_at: 2026-08-28
+        value: 2026-10-10T08:30:09Z
+        source: https://github.com/CorgiCorner/bisibility/commit/2fcbd98621785ef7f9313cce8d3e5ac50c33bbd1
+        verified_at: 2026-10-10
       archived:
         value: false
         source: https://github.com/CorgiCorner/bisibility
@@ -317,9 +317,9 @@ projects:
         source: https://github.com/CorgiCorner/bisibility
         verified_at: 2026-07-30
       latest_release:
-        value: 2026-08-28T02:36:18Z
-        source: https://github.com/CorgiCorner/bisibility/releases/tag/v0.16.0
-        verified_at: 2026-08-28
+        value: 2026-10-10T08:51:26Z
+        source: https://github.com/CorgiCorner/bisibility/releases/tag/v0.30.0
+        verified_at: 2026-10-10
   - name: Senkiu
     repository: zft9xgy/senkiu
     website: https://github.com/zft9xgy/senkiu
@@ -377,9 +377,9 @@ projects:
         note: The README documents a deployment helper, but no general end-user CLI.
     metrics:
       stars:
-        value: 1
+        value: 2
         source: https://github.com/zft9xgy/senkiu
-        verified_at: 2026-08-28
+        verified_at: 2026-10-10
       last_commit:
         value: 2026-08-28T10:25:56Z
         source: https://github.com/zft9xgy/senkiu/commit/6339f6680507d7c3c90272d36f8e8f5c3c2c6b85

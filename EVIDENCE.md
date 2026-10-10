@@ -24,15 +24,15 @@ that project.
 - [Repository README](https://github.com/towfiqi/serpbear#readme): Complete repository README
 - [Official documentation sitemap](https://docs.serpbear.com/sitemap.xml): All 18 documentation pages listed in the sitemap
 
-### SerpTrail - evidence reviewed 2026-07-30
-
-- [Repository README](https://github.com/serpapi/serptrail#readme): Complete repository README
-- [Official repository documentation directory](https://github.com/serpapi/serptrail/tree/master/docs): All files in docs (PRODUCTION.md and RELEASE.md)
-
 ### Bisibility - evidence reviewed 2026-07-30
 
 - [Repository README](https://github.com/CorgiCorner/bisibility#readme): Complete repository README
 - [Official documentation source tree](https://github.com/CorgiCorner/bisibility/tree/main/docs): All public documentation files under docs
+
+### SerpTrail - evidence reviewed 2026-07-30
+
+- [Repository README](https://github.com/serpapi/serptrail#readme): Complete repository README
+- [Official repository documentation directory](https://github.com/serpapi/serptrail/tree/master/docs): All files in docs (PRODUCTION.md and RELEASE.md)
 
 ### Senkiu - evidence reviewed 2026-08-28
 
