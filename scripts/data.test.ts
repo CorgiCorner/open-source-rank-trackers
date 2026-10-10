@@ -372,15 +372,27 @@ test("discovery statistics render as run-scoped table values", async () => {
   ]);
   const methodology = renderMethodology(data, candidates);
   const stats = candidateStats(candidates);
-  assert.ok(
-    methodology.includes(
-      `| Pending review | ${stats.pending_review.toLocaleString("en-US")} |`,
-    ),
+  const lines = methodology.split("\n");
+  const cells = (line: string) =>
+    line
+      .split("|")
+      .slice(1, -1)
+      .map((cell) => cell.trim());
+  const header = lines.find((line) => line.startsWith("| Metric |"));
+  assert.ok(header, "discovery run table header");
+  const activeColumn = cells(header).findIndex((cell) =>
+    cell.endsWith("(active)"),
   );
-  assert.ok(
-    methodology.includes(
-      `| Included | ${stats.included.toLocaleString("en-US")} |`,
-    ),
+  assert.ok(activeColumn > 0, "one column is marked as the active run");
+  const activeValue = (label: string) => {
+    const row = lines.find((line) => line.startsWith(`| ${label} |`));
+    assert.ok(row, `${label} row`);
+    return cells(row)[activeColumn];
+  };
+  assert.equal(
+    activeValue("Pending review"),
+    stats.pending_review.toLocaleString("en-US"),
   );
+  assert.equal(activeValue("Included"), stats.included.toLocaleString("en-US"));
   assert.doesNotMatch(methodology, /\bMost mechanical exclusions\b/);
 });
