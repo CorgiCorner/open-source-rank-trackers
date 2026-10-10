@@ -39,11 +39,37 @@ test("external policy facts are sourced and dated", () => {
 });
 
 test("active projects are sorted by stars descending", async () => {
-  const projects = activeProjects(await loadData());
-  assert.deepEqual(
-    projects.map((project) => project.name),
-    ["OpenSEO", "SerpBear", "SerpTrail", "Bisibility", "Senkiu"],
+  const data = structuredClone(await loadData());
+  const active = data.projects.filter(
+    (project) => project.status.value === "active",
   );
+  assert.ok(active.length >= 3);
+  const [fewest, tiedA, tiedB, ...rest] = active;
+  fewest!.metrics.stars.value = 1;
+  tiedA!.metrics.stars.value = 10;
+  tiedB!.metrics.stars.value = 10;
+  for (const project of rest) project.metrics.stars.value = 0;
+
+  const tiedByName = [tiedA!.name, tiedB!.name].toSorted((left, right) =>
+    left.localeCompare(right),
+  );
+  assert.deepEqual(
+    activeProjects(data)
+      .slice(0, 3)
+      .map((project) => project.name),
+    [...tiedByName, fewest!.name],
+  );
+});
+
+test("the committed active projects follow the star order", async () => {
+  const projects = activeProjects(await loadData());
+  for (const [index, project] of projects.slice(1).entries()) {
+    const previous = projects[index]!;
+    assert.ok(
+      previous.metrics.stars.value >= project.metrics.stars.value,
+      `${previous.name} should not have fewer stars than ${project.name}`,
+    );
+  }
 });
 
 test("active table rows and table-ready candidates stay aligned", async () => {
@@ -192,10 +218,14 @@ test("repository links render in their own column", async () => {
   const readme = renderReadme(data, candidates);
 
   assert.match(readme, /\| Project \| Repository \| Stars \| Data source \|/);
-  assert.match(
-    readme,
-    /\| SerpTrail \| \[serpapi\/serptrail\]\(https:\/\/github\.com\/serpapi\/serptrail\) \| \[44\]/,
-  );
+  for (const project of activeProjects(data)) {
+    const repositoryCell = `[${project.repository}](https://github.com/${project.repository})`;
+    const starsCell = `[${project.metrics.stars.value}](${project.metrics.stars.source})`;
+    assert.ok(
+      readme.includes(` | ${repositoryCell} | ${starsCell} | `),
+      `${project.name} renders its repository link before its stars`,
+    );
+  }
   assert.doesNotMatch(readme, /\]\([^)]*\) \(\[GitHub\]/);
 });
 
@@ -210,14 +240,33 @@ test("interface navigation is derived from feature cells", async () => {
     readme,
     /\| Stars \| Data source \| Dashboard \| REST API \| MCP \| CLI \| Last commit \|/,
   );
-  assert.match(
-    readme,
-    /- \*\*With a web dashboard:\*\* \[OpenSEO\].*\[SerpBear\].*SerpTrail.*\[Bisibility\]/,
-  );
-  assert.match(
-    readme,
-    /- \*\*Exposes an MCP server:\*\* \[OpenSEO\].*\[Bisibility\]/,
-  );
+  const active = activeProjects(data);
+  const lines = readme.split("\n");
+  for (const column of data.comparison.feature_columns) {
+    const prefix = `- **${column.navigation_label}:** `;
+    const line = lines.find((entry) => entry.startsWith(prefix));
+    assert.ok(line, `navigation line for ${column.navigation_label}`);
+    const listed = active.filter(
+      (project) => project.features[column.key]?.value === true,
+    );
+    if (listed.length === 0) {
+      assert.equal(line, `${prefix}None in the current table`);
+      continue;
+    }
+    let position = prefix.length;
+    for (const project of listed) {
+      const found = line.indexOf(project.name, position);
+      assert.ok(found >= 0, `${project.name} listed in star order under ${column.navigation_label}`);
+      position = found + project.name.length;
+    }
+    for (const project of active) {
+      if (listed.includes(project)) continue;
+      assert.ok(
+        !line.includes(project.name),
+        `${project.name} is not listed under ${column.navigation_label}`,
+      );
+    }
+  }
 });
 
 test("every comparison cell has value, source, and verified_at", async () => {
