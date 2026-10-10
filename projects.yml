@@ -29,16 +29,16 @@ projects:
         label: Repository README
         source: https://github.com/every-app/open-seo#readme
         scope: Complete repository README
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
       - kind: documentation
         label: Official documentation source tree
         source: https://github.com/every-app/open-seo/tree/main/web/content/docs
         scope: All 17 files under web/content/docs
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
     status:
       value: active
       source: https://github.com/every-app/open-seo
-      verified_at: 2026-07-30
+      verified_at: 2026-10-10
     maturity:
       value: Active
       source: https://github.com/every-app/open-seo/releases/tag/v0.1.12
@@ -47,33 +47,33 @@ projects:
       server:
         value: MIT
         source: https://github.com/every-app/open-seo/blob/main/LICENSE
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
       clients:
         value: MIT (same repository)
         source: https://github.com/every-app/open-seo/blob/main/LICENSE
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
     data_source:
       value: BYOK (DataForSEO)
       source: https://github.com/every-app/open-seo#costs
-      verified_at: 2026-07-30
+      verified_at: 2026-10-10
     features:
       dashboard:
         value: true
-        source: https://github.com/every-app/open-seo#features
-        verified_at: 2026-07-30
+        source: https://github.com/every-app/open-seo#why-use-openseo
+        verified_at: 2026-10-10
       rest_api:
         value: unknown
         source: https://github.com/every-app/open-seo/tree/main/web/content/docs
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
         note: No user-facing REST API is documented in the repository README or the complete official documentation corpus.
       mcp:
         value: true
         source: https://openseo.so/docs/mcp
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
       cli:
         value: unknown
         source: https://github.com/every-app/open-seo/tree/main/web/content/docs
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
         note: No end-user CLI is documented in the repository README or the complete official documentation corpus.
     metrics:
       stars:
@@ -104,16 +104,16 @@ projects:
         label: Repository README
         source: https://github.com/towfiqi/serpbear#readme
         scope: Complete repository README
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
       - kind: documentation
         label: Official documentation sitemap
         source: https://docs.serpbear.com/sitemap.xml
         scope: All 18 documentation pages listed in the sitemap
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
     status:
       value: active
       source: https://github.com/towfiqi/serpbear
-      verified_at: 2026-07-30
+      verified_at: 2026-10-10
     maturity:
       value: Mature
       source: https://github.com/towfiqi/serpbear/releases/tag/v3.1.0
@@ -122,33 +122,33 @@ projects:
       server:
         value: MIT
         source: https://github.com/towfiqi/serpbear/blob/main/LICENSE
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
       clients:
         value: MIT (same repository)
         source: https://github.com/towfiqi/serpbear/blob/main/LICENSE
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
     data_source:
       value: Self-managed scraper or BYOK API/proxy
       source: https://docs.serpbear.com/integrations/
-      verified_at: 2026-07-30
+      verified_at: 2026-10-10
     features:
       dashboard:
         value: true
         source: https://docs.serpbear.com/
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
       rest_api:
         value: true
         source: https://docs.serpbear.com/miscellaneous/api-documentation/
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
       mcp:
         value: unknown
         source: https://docs.serpbear.com/sitemap.xml
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
         note: MCP is not documented in the repository README or any of the 18 pages in the official documentation sitemap.
       cli:
         value: unknown
         source: https://docs.serpbear.com/sitemap.xml
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
         note: An end-user CLI is not documented in the repository README or any of the 18 pages in the official documentation sitemap.
     metrics:
       stars:
@@ -179,16 +179,16 @@ projects:
         label: Repository README
         source: https://github.com/serpapi/serptrail#readme
         scope: Complete repository README
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
       - kind: documentation
         label: Official repository documentation directory
         source: https://github.com/serpapi/serptrail/tree/master/docs
-        scope: All files in docs (PRODUCTION.md and RELEASE.md)
-        verified_at: 2026-07-30
+        scope: All files in docs (DEVELOPMENT.md, PRODUCTION.md and RELEASE.md)
+        verified_at: 2026-10-10
     status:
       value: active
       source: https://github.com/serpapi/serptrail
-      verified_at: 2026-07-30
+      verified_at: 2026-10-10
     maturity:
       value: Experimental
       source: https://github.com/serpapi/serptrail/releases
@@ -197,34 +197,34 @@ projects:
       server:
         value: MIT
         source: https://github.com/serpapi/serptrail/blob/master/LICENSE
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
       clients:
         value: MIT (same repository)
         source: https://github.com/serpapi/serptrail/blob/master/LICENSE
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
     data_source:
       value: BYOK (SerpApi)
       source: https://github.com/serpapi/serptrail#requirements
-      verified_at: 2026-07-30
+      verified_at: 2026-10-10
     features:
       dashboard:
         value: true
         source: https://github.com/serpapi/serptrail#readme
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
       rest_api:
         value: unknown
         source: https://github.com/serpapi/serptrail/tree/master/docs
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
         note: No user-facing REST API is documented in the repository README or the complete official repository documentation directory.
       mcp:
         value: unknown
         source: https://github.com/serpapi/serptrail/tree/master/docs
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
         note: MCP is not documented in the repository README or the complete official repository documentation directory.
       cli:
         value: unknown
         source: https://github.com/serpapi/serptrail/tree/master/docs
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
         note: An end-user CLI is not documented in the repository README or the complete official repository documentation directory.
     metrics:
       stars:
@@ -255,16 +255,16 @@ projects:
         label: Repository README
         source: https://github.com/CorgiCorner/bisibility#readme
         scope: Complete repository README
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
       - kind: documentation
         label: Official documentation source tree
         source: https://github.com/CorgiCorner/bisibility/tree/main/docs
         scope: All public documentation files under docs
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
     status:
       value: active
       source: https://github.com/CorgiCorner/bisibility
-      verified_at: 2026-07-30
+      verified_at: 2026-10-10
     maturity:
       value: Active
       source: https://github.com/CorgiCorner/bisibility/releases/tag/v0.30.0
@@ -273,32 +273,32 @@ projects:
       server:
         value: AGPL-3.0-only
         source: https://github.com/CorgiCorner/bisibility/blob/main/LICENSE
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
       clients:
         value: Apache-2.0
         source: https://github.com/CorgiCorner/bisibility-sdk-ts/blob/main/LICENSE
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
     data_source:
-      value: BYOK (DataForSEO or SerpAPI)
-      source: https://github.com/CorgiCorner/bisibility#provider-support
-      verified_at: 2026-07-30
+      value: BYOK (DataForSEO or SerpApi)
+      source: https://bisibility.com/docs/integrations
+      verified_at: 2026-10-10
     features:
       dashboard:
         value: true
         source: https://github.com/CorgiCorner/bisibility#readme
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
       rest_api:
         value: true
         source: https://bisibility.com/docs/api/overview
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
       mcp:
         value: true
         source: https://bisibility.com/docs/agents
-        verified_at: 2026-07-30
+        verified_at: 2026-10-10
       cli:
         value: true
-        source: https://github.com/CorgiCorner/bisibility#product-status
-        verified_at: 2026-07-30
+        source: https://bisibility.com/docs/cli
+        verified_at: 2026-10-10
     metrics:
       stars:
         value: 584
@@ -328,16 +328,16 @@ projects:
         label: Repository README
         source: https://github.com/zft9xgy/senkiu#readme
         scope: Complete repository README
-        verified_at: 2026-08-28
+        verified_at: 2026-10-10
       - kind: documentation
         label: Official repository documentation directory
         source: https://github.com/zft9xgy/senkiu/tree/main/docs
         scope: All five screenshots under docs/screenshots
-        verified_at: 2026-08-28
+        verified_at: 2026-10-10
     status:
       value: active
       source: https://github.com/zft9xgy/senkiu
-      verified_at: 2026-08-28
+      verified_at: 2026-10-10
     maturity:
       value: Experimental
       source: https://github.com/zft9xgy/senkiu/releases/tag/v0.1.0
@@ -346,34 +346,34 @@ projects:
       server:
         value: AGPL-3.0-only
         source: https://github.com/zft9xgy/senkiu/blob/main/LICENSE
-        verified_at: 2026-08-28
+        verified_at: 2026-10-10
       clients:
         value: AGPL-3.0-only (same repository)
         source: https://github.com/zft9xgy/senkiu/blob/main/LICENSE
-        verified_at: 2026-08-28
+        verified_at: 2026-10-10
     data_source:
       value: BYOK (DataForSEO)
       source: https://github.com/zft9xgy/senkiu#getting-started
-      verified_at: 2026-08-28
+      verified_at: 2026-10-10
     features:
       dashboard:
         value: true
         source: https://github.com/zft9xgy/senkiu#screenshots
-        verified_at: 2026-08-28
+        verified_at: 2026-10-10
       rest_api:
         value: unknown
         source: https://github.com/zft9xgy/senkiu#readme
-        verified_at: 2026-08-28
+        verified_at: 2026-10-10
         note: No user-facing REST API is documented in the complete repository README.
       mcp:
         value: unknown
         source: https://github.com/zft9xgy/senkiu#readme
-        verified_at: 2026-08-28
+        verified_at: 2026-10-10
         note: MCP is not documented in the complete repository README.
       cli:
         value: unknown
         source: https://github.com/zft9xgy/senkiu#getting-started
-        verified_at: 2026-08-28
+        verified_at: 2026-10-10
         note: The README documents a deployment helper, but no general end-user CLI.
     metrics:
       stars:

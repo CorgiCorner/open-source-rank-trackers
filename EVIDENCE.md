@@ -14,27 +14,27 @@ Each set was declared before evaluating that project's cells. It includes the
 repository README and the complete official documentation corpus available for
 that project.
 
-### OpenSEO - evidence reviewed 2026-07-30
+### OpenSEO - evidence reviewed 2026-10-10
 
 - [Repository README](https://github.com/every-app/open-seo#readme): Complete repository README
 - [Official documentation source tree](https://github.com/every-app/open-seo/tree/main/web/content/docs): All 17 files under web/content/docs
 
-### SerpBear - evidence reviewed 2026-07-30
+### SerpBear - evidence reviewed 2026-10-10
 
 - [Repository README](https://github.com/towfiqi/serpbear#readme): Complete repository README
 - [Official documentation sitemap](https://docs.serpbear.com/sitemap.xml): All 18 documentation pages listed in the sitemap
 
-### Bisibility - evidence reviewed 2026-07-30
+### Bisibility - evidence reviewed 2026-10-10
 
 - [Repository README](https://github.com/CorgiCorner/bisibility#readme): Complete repository README
 - [Official documentation source tree](https://github.com/CorgiCorner/bisibility/tree/main/docs): All public documentation files under docs
 
-### SerpTrail - evidence reviewed 2026-07-30
+### SerpTrail - evidence reviewed 2026-10-10
 
 - [Repository README](https://github.com/serpapi/serptrail#readme): Complete repository README
-- [Official repository documentation directory](https://github.com/serpapi/serptrail/tree/master/docs): All files in docs (PRODUCTION.md and RELEASE.md)
+- [Official repository documentation directory](https://github.com/serpapi/serptrail/tree/master/docs): All files in docs (DEVELOPMENT.md, PRODUCTION.md and RELEASE.md)
 
-### Senkiu - evidence reviewed 2026-08-28
+### Senkiu - evidence reviewed 2026-10-10
 
 - [Repository README](https://github.com/zft9xgy/senkiu#readme): Complete repository README
 - [Official repository documentation directory](https://github.com/zft9xgy/senkiu/tree/main/docs): All five screenshots under docs/screenshots
