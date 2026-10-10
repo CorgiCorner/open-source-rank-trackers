@@ -320,10 +320,26 @@ test("legacy unknowns are excluded from active-project evidence notes", async ()
 });
 
 test("evidence review dates appear once per project heading", async () => {
-  const evidence = renderEvidence(await loadData());
+  const data = structuredClone(await loadData());
+  const [single, ranged] = activeProjects(data);
+  assert.ok(ranged!.evidence_set.length >= 2);
+  for (const entry of single!.evidence_set) entry.verified_at = "2026-07-30";
+  ranged!.evidence_set.forEach((entry, index) => {
+    entry.verified_at = index === 0 ? "2026-07-30" : "2026-08-28";
+  });
+
+  const evidence = renderEvidence(data);
   assert.equal(
-    evidence.match(/evidence reviewed 2026-07-30/g)?.length,
-    4,
+    evidence.match(/ - evidence reviewed /g)?.length,
+    activeProjects(data).length,
+  );
+  assert.ok(
+    evidence.includes(`### ${single!.name} - evidence reviewed 2026-07-30\n`),
+  );
+  assert.ok(
+    evidence.includes(
+      `### ${ranged!.name} - evidence reviewed 2026-07-30 to 2026-08-28\n`,
+    ),
   );
   assert.doesNotMatch(evidence, /\(reviewed \d{4}-\d{2}-\d{2}\)/);
 });
