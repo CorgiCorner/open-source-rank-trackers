@@ -20,6 +20,11 @@ comparison:
         value: In the Rank Tracking section, SerpBear is the only entry explicitly described as open source
         source: https://github.com/serpapi/awesome-seo-tools#rank-tracking
         verified_at: 2026-07-30
+    - name: Open Source SEO Tools
+      fact:
+        value: A directory of open-source SEO tools, maintained by the same creator as Bisibility
+        source: https://opensourceseotools.com
+        verified_at: 2026-10-17
 projects:
   - name: OpenSEO
     repository: every-app/open-seo
@@ -77,9 +82,9 @@ projects:
         note: No end-user CLI is documented in the repository README or the complete official documentation corpus.
     metrics:
       stars:
-        value: 22969
+        value: 23897
         source: https://github.com/every-app/open-seo
-        verified_at: 2026-10-10
+        verified_at: 2026-10-17
       last_commit:
         value: 2026-10-08T07:01:04Z
         source: https://github.com/every-app/open-seo/commit/89e5a00717cdf049b7c2b4e29646edb3a7d4995b
@@ -152,9 +157,9 @@ projects:
         note: An end-user CLI is not documented in the repository README or any of the 18 pages in the official documentation sitemap.
     metrics:
       stars:
-        value: 2107
+        value: 2114
         source: https://github.com/towfiqi/serpbear
-        verified_at: 2026-10-10
+        verified_at: 2026-10-17
       last_commit:
         value: 2026-05-14T07:30:56Z
         source: https://github.com/towfiqi/serpbear/commit/a1328fb4142dde40e0011c646339c4d4dbabdaca
@@ -230,7 +235,7 @@ projects:
       stars:
         value: 50
         source: https://github.com/serpapi/serptrail
-        verified_at: 2026-10-10
+        verified_at: 2026-10-17
       last_commit:
         value: 2026-08-03T09:51:13Z
         source: https://github.com/serpapi/serptrail/commit/77bfecaa1049a9a4b48e563558b6fc47cba8b5cd
@@ -301,9 +306,9 @@ projects:
         verified_at: 2026-10-10
     metrics:
       stars:
-        value: 584
+        value: 605
         source: https://github.com/CorgiCorner/bisibility
-        verified_at: 2026-10-10
+        verified_at: 2026-10-17
       last_commit:
         value: 2026-10-10T08:30:09Z
         source: https://github.com/CorgiCorner/bisibility/commit/2fcbd98621785ef7f9313cce8d3e5ac50c33bbd1
@@ -379,7 +384,7 @@ projects:
       stars:
         value: 2
         source: https://github.com/zft9xgy/senkiu
-        verified_at: 2026-10-10
+        verified_at: 2026-10-17
       last_commit:
         value: 2026-08-28T10:25:56Z
         source: https://github.com/zft9xgy/senkiu/commit/6339f6680507d7c3c90272d36f8e8f5c3c2c6b85
@@ -454,9 +459,9 @@ projects:
         note: An end-user CLI is not documented in the reviewed public overview.
     metrics:
       stars:
-        value: 757
+        value: 755
         source: https://github.com/serphacker/serposcope
-        verified_at: 2026-08-28
+        verified_at: 2026-10-17
       last_commit:
         value: 2022-01-15T13:06:36Z
         source: https://github.com/serphacker/serposcope/commit/079809705817871984cff40c87a4fe176cccb90b
